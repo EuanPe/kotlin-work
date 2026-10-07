@@ -7,7 +7,7 @@ import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
     if (args.size < 3) {
-        println("Error: values for a, b, c required on command line\n")
+        println("Error: values for a, b, c required on command line\n\n")
         exitProcess(1)
     }
 

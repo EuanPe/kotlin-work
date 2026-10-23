@@ -20,6 +20,9 @@ fun isValidTriangle (triangle: Triangle): Boolean {
 }
 
 fun triangleArea(triangle: Triangle): Double {
+    if (!isValidTriangle(triangle)) {
+        throw IllegalArgumentException("Invalid triangle")
+    }
     val a = triangle.first
     val b = triangle.second
     val c = triangle.third

@@ -1,5 +1,8 @@
 // Task 7.7.1: statistics functions
+
 fun median(data: List<Float>): Float {
+    require(data.isNotEmpty()) { "Cannot calculate median of an empty list" }
+
     val sorted = data.sorted()
     val middle = sorted.size / 2
 
@@ -9,6 +12,7 @@ fun median(data: List<Float>): Float {
         sorted[middle]
     }
 }
+
 
 fun displayStatistics(data: List<Float>) {
     println("Minimum: ${data.minOrNull()}")
